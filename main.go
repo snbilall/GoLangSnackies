@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import "gosnackies/cards"
 
 func main() {
-	fmt.Println("hello world")
+	cards := cards.NewDeck()
+	cards.Shuffle()
+	cards.Print()
 }
